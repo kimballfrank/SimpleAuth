@@ -70,7 +70,6 @@
     SimpleAuth.configuration[@"linkedin-web"] = @{};
 
 
-
     // consumer_key and consumer_secret are required
     SimpleAuth.configuration[@"flickr"] = @{@"consumer_key":flickrConsumerKey, @"consumer_secret":flickrConsumerSecret};
 }
