@@ -56,8 +56,9 @@
     // client_id and redirect_uri are required
     SimpleAuth.configuration[@"meetup"] = @{};
 	
+
     // consumer_key and consumer_secret are required
-    SimpleAuth.configuration[@"tumblr"] = @{};
+    SimpleAuth.configuration[@"tumblr"] = @{@"consumer_key":tumblrConsumerKey, @"consumer_secret":tumblrConsumerSecret};
 	
     // client_id and redirect_uri are required
     SimpleAuth.configuration[@"foursquare-web"] = @{};
@@ -67,6 +68,11 @@
     
     // client_id, client_secret, and and redirect_uri are required
     SimpleAuth.configuration[@"linkedin-web"] = @{};
+
+
+
+    // consumer_key and consumer_secret are required
+    SimpleAuth.configuration[@"flickr"] = @{@"consumer_key":flickrConsumerKey, @"consumer_secret":flickrConsumerSecret};
 }
 
 

@@ -34,6 +34,8 @@
 		3C611F48183535A400D87E45 /* UIViewController+SimpleAuthAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C611F47183535A400D87E45 /* UIViewController+SimpleAuthAdditions.m */; };
 		4D149A411889B3DF0024639C /* SimpleAuthMeetupProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D149A401889B3DF0024639C /* SimpleAuthMeetupProvider.m */; };
 		4D149A441889B4390024639C /* SimpleAuthMeetupLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D149A431889B4390024639C /* SimpleAuthMeetupLoginViewController.m */; };
+		679BADBD18A4159600E547AD /* SimpleAuthFlickrLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679BADBA18A4159600E547AD /* SimpleAuthFlickrLoginViewController.m */; };
+		679BADBE18A4159600E547AD /* SimpleAuthFlickrProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 679BADBC18A4159600E547AD /* SimpleAuthFlickrProvider.m */; };
 		81A50A491892649300D5D8AC /* SimpleAuthLinkedInWebProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A50A481892649300D5D8AC /* SimpleAuthLinkedInWebProvider.m */; };
 		81A50A4C189264C500D5D8AC /* SimpleAuthLinkedInWebLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A50A4B189264C500D5D8AC /* SimpleAuthLinkedInWebLoginViewController.m */; };
 		F435E27FC62B4584BF9DBF2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4998CFA03844FB99EE78AA /* libPods.a */; };
@@ -112,6 +114,10 @@
 		4D149A401889B3DF0024639C /* SimpleAuthMeetupProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAuthMeetupProvider.m; path = Meetup/SimpleAuthMeetupProvider.m; sourceTree = "<group>"; };
 		4D149A421889B4390024639C /* SimpleAuthMeetupLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAuthMeetupLoginViewController.h; path = Meetup/SimpleAuthMeetupLoginViewController.h; sourceTree = "<group>"; };
 		4D149A431889B4390024639C /* SimpleAuthMeetupLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAuthMeetupLoginViewController.m; path = Meetup/SimpleAuthMeetupLoginViewController.m; sourceTree = "<group>"; };
+		679BADB918A4159600E547AD /* SimpleAuthFlickrLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAuthFlickrLoginViewController.h; sourceTree = "<group>"; };
+		679BADBA18A4159600E547AD /* SimpleAuthFlickrLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAuthFlickrLoginViewController.m; sourceTree = "<group>"; };
+		679BADBB18A4159600E547AD /* SimpleAuthFlickrProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAuthFlickrProvider.h; sourceTree = "<group>"; };
+		679BADBC18A4159600E547AD /* SimpleAuthFlickrProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAuthFlickrProvider.m; sourceTree = "<group>"; };
 		81A50A471892649300D5D8AC /* SimpleAuthLinkedInWebProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAuthLinkedInWebProvider.h; sourceTree = "<group>"; };
 		81A50A481892649300D5D8AC /* SimpleAuthLinkedInWebProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAuthLinkedInWebProvider.m; sourceTree = "<group>"; };
 		81A50A4A189264C500D5D8AC /* SimpleAuthLinkedInWebLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAuthLinkedInWebLoginViewController.h; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				F9BE4F32189120BE00AE303A /* Foursquare Web */,
 				4D149A3E1889B38C0024639C /* Meetup */,
 				81A50A461892645800D5D8AC /* LinkedIn Web */,
+				679BADB818A4159600E547AD /* Flickr */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -357,6 +364,18 @@
 			name = Meetup;
 			sourceTree = "<group>";
 		};
+		679BADB818A4159600E547AD /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				679BADB918A4159600E547AD /* SimpleAuthFlickrLoginViewController.h */,
+				679BADBA18A4159600E547AD /* SimpleAuthFlickrLoginViewController.m */,
+				679BADBB18A4159600E547AD /* SimpleAuthFlickrProvider.h */,
+				679BADBC18A4159600E547AD /* SimpleAuthFlickrProvider.m */,
+			);
+			name = Flickr;
+			path = Providers/Flickr;
+			sourceTree = SOURCE_ROOT;
+		};
 		81A50A461892645800D5D8AC /* LinkedIn Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC5FC701891D86A00523166 /* SimpleAuthDropboxWebProvider.m in Sources */,
+				679BADBD18A4159600E547AD /* SimpleAuthFlickrLoginViewController.m in Sources */,
 				3B8C408E188792A9007DC578 /* SimpleAuthTwitterWebProvider.m in Sources */,
 				81A50A4C189264C500D5D8AC /* SimpleAuthLinkedInWebLoginViewController.m in Sources */,
 				F9BE4F3E189139E900AE303A /* SimpleAuthFoursquareWebProvider.m in Sources */,
@@ -515,6 +535,7 @@
 				81A50A491892649300D5D8AC /* SimpleAuthLinkedInWebProvider.m in Sources */,
 				3B8C409118879347007DC578 /* SimpleAuthTwitterWebLoginViewController.m in Sources */,
 				3B6584631888ABFB00D59100 /* SimpleAuthTumblrLoginViewController.m in Sources */,
+				679BADBE18A4159600E547AD /* SimpleAuthFlickrProvider.m in Sources */,
 				3B52BB9518871F6200C73329 /* SimpleAuthFacebookProvider.m in Sources */,
 				3B9AB064182AC2710011FB9E /* SimpleAuthProvider.m in Sources */,
 				3B52BB9B188731A300C73329 /* SimpleAuthInstagramLoginViewController.m in Sources */,
